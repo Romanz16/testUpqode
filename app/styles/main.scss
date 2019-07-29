@@ -1,0 +1,1145 @@
+@import 'base/base';
+@import 'base/variables';
+@import 'base/mixin';
+
+@font-face {
+    font-family: 'LeagueGothic';
+    src: url(fonts/leaguegothic/LeagueGothicCyrillica.ttf);
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url(fonts/Open_Sans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url(fonts/opensans_light/opensans-light.ttf);
+}
+ 
+@font-face {
+    font-family: 'georgia-italic';
+    src: url(fonts/georgia/georgia%20italic.ttf);
+}
+ 
+@font-face {
+    font-family: 'OpenSansExtrabold';
+    src: url(fonts/opensans_extrabold/opensans-extrabold.ttf);
+}
+
+.container {
+    width: 960px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    height: 846px;
+    background-image: url(../images/bg.jpg);
+    background-position: center top;
+    display: flex;
+}
+
+.section-top {
+    height: 342px;
+    background-image: linear-gradient(to top, #322539 0%, #745083 100%);
+}
+
+.section-center {
+    height: 607px;
+    background-color: #f9f9f9;
+    position: relative;
+}
+
+.header-menu {
+    margin-top: 70px;
+    display: flex;
+}
+
+.header-logo {
+    position: relative;
+    padding-top: 4px;
+}
+
+.header-logo-layer45 {
+    position: absolute;
+    left: 15px;
+    top: -22px;
+    width: 21px;
+    height: 21px;
+    z-index: 128;
+}
+
+.header-logo-shape6 {
+    position: absolute;
+    left: 15px;
+    top: -18px;
+    width: 19px;
+    height: 13px;
+    z-index: 129;
+}
+
+.header-logo-text1 {
+    font-size: 48px;
+    text-transform: uppercase;
+    font-family: "LeagueGothic";
+    color: rgb(255, 255, 255);
+    line-height: 0.703;
+    text-align: left;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.header-logo-text2 {
+    font-size: 48px;
+    text-transform: uppercase;
+    font-family: "LeagueGothic";
+    color: rgb(195, 229, 75);
+    line-height: 0.703;
+    background: -webkit-linear-gradient(#745083, #33263a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: left;
+}
+
+.header-nav {
+    height: 100%;
+    width: 800px;
+    margin-left: auto;
+    margin-right: 0;
+    z-index: 1000;
+}
+
+.header-nav-ul {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    z-index: 1000;
+}
+
+.header-nav-li {
+    display: block;
+    margin-left: 43px;
+    padding-left: 6px;
+    padding-right: 4px;
+    font-size: 24px;
+    font-family: "LeagueGothic";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.405;
+    text-align: left;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+}
+
+.header-nav-li>a {
+    text-decoration: none;
+    font-size: 24px;
+    font-family: "LeagueGothic";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.405;
+    text-align: left;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+}
+
+.header-nav-li:hover {
+    display: block;
+    margin-left: 43px;
+    padding-left: 6px;
+    padding-right: 4px;
+    background-image: url(../images/Layer%2014.png);
+    background-size: 100% 2px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    z-index: 1000;
+}
+
+.header-nav-li-active {
+    display: block;
+    margin-left: 43px;
+    padding-left: 6px;
+    padding-right: 4px;
+    background-image: url(../images/Layer%2014.png);
+    background-size: 100% 2px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    z-index: 1000;
+}
+
+.header-nav-li-active>a {
+    text-decoration: none;
+    font-size: 24px;
+    font-family: "LeagueGothic";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.405;
+    text-align: left;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+}
+
+.sliders {
+    height: 528px;
+    margin-top: 147px;
+    z-index: 20;
+    position: relative;
+}
+
+.sliders-background {
+    margin-top: 20px;
+    height: 400px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    background-size: 100% 400px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 257px;
+    z-index: 10;
+}
+
+.sliders-body {
+    display: flex;
+}
+
+.sliders-text {
+    margin-top: 100px;
+    width: 505px;
+    height: 235px;
+    z-index: 70;
+}
+
+.sliders-text1 {
+    font-size: 60px;
+    color: rgb(254, 254, 254);
+    font-family: "LeagueGothic";
+    text-align: left;
+    line-height: 60px;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.sliders-text2 {
+    width: 100%;
+    height: 36px;
+    overflow: hidden;
+    font-size: 32px;
+    color: rgb(237, 191, 255);
+    font-family: "LeagueGothic";
+    text-align: left;
+    line-height: 36px;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.sliders-text3 {
+    width: 100%;
+    height: 128px;
+    overflow: hidden;
+    font-size: 18px;
+    color: rgb(254, 254, 254);
+    font-family: "OpenSansLight";
+    text-align: left;
+    line-height: 22px;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.sliders-smartphone {
+    width: 40%;
+    z-index: 70;
+    text-align: right;
+    padding-right: 74px;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+
+/*
+.left-arrows {
+    margin: 0 auto;
+    margin-top: 457px;
+    width: 31px;
+    height: 43px;
+    z-index: 300;
+}
+
+.right-arrows {
+    margin: 0 auto;
+    z-index: 300;
+    margin-top: 457px;
+    width: 31px;
+    height: 43px;
+}
+*/
+
+.navigation {
+    position: absolute;
+    left: 710px;
+    top: 510px;
+    z-index: 10;
+}
+
+.wrapper-about-company {
+    display: flex;
+    align-content: center;
+    padding-top: 80px;
+    padding-bottom: 70px;
+    width: 100%;
+    height: 100%;
+}
+
+.about-company {
+    display: flex;
+    width: 100%;
+    height: 215px;
+}
+
+.about-company-img {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.about-company-img1 {
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/source_of_icons.png);
+    background-position: -405px 405px;
+}
+
+.about-company-img2 {
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/source_of_icons.png);
+    background-position: 188px 280px;
+}
+
+.about-company-img3 {
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/source_of_icons.png);
+    background-position: -487px -10px;
+}
+
+.about-company-title {
+    font-size: 30px;
+    font-family: "LeagueGothic";
+    color: rgb(255, 255, 255);
+    line-height: 38px;
+    text-align: left;
+    text-shadow: 0px 1px 0px rgba(15, 21, 24, 0.004);
+}
+
+.about-company-text1 {
+    width: 250px;
+    /*    width: 100%;*/
+    height: 125px;
+    overflow: hidden;
+    font-size: 16px;
+    font-family: "OpenSansLight";
+    color: rgb(255, 255, 255);
+    line-height: 1.5;
+    text-align: left;
+    text-shadow: 0px 1px 0px rgba(15, 21, 24, 0.004);
+}
+
+.read-more {
+    margin-top: 10px;
+    margin-right: 5px;
+    text-align: right;
+}
+
+.read-more>a:hover {
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+}
+
+.read-more-active {
+    margin-top: 10px;
+    margin-right: 5px;
+    text-align: right;
+}
+
+.read-more-active>a {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "LeagueGothic";
+    color: rgb(255, 255, 255);
+    line-height: 1.333;
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+}
+
+.read-more>a {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "LeagueGothic";
+    color: rgb(255, 255, 255);
+    line-height: 1.333;
+    text-shadow: 0px 1px 0px rgba(15, 21, 24, 0.004);
+}
+
+.section-center-content {
+    padding-top: 100px;
+    height: 387px;
+    display: flex;
+}
+
+.section-center-left {
+    width: 50%;
+    position: relative;
+}
+
+.icons {
+    position: absolute;
+    top: 18px;
+    width: 49px;
+    height: 49px;
+    background-image: url(../images/source_of_icons.png);
+    background-position: -5px -503px;
+}
+
+.img-checkbox {
+    position: absolute;
+    top: 296px;
+    left: 193px;
+    width: 85px;
+    height: 19px;
+    background-image: url(../images/source_of_icons.png);
+    background-position: -55px -19px;
+}
+
+.section-center-left-pingbuller {
+    overflow: hidden;
+    width: 100%;
+    height: 290px;
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 55px;
+    background-image: url(../images/Layer60.png);
+    background-size: 428px 290px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.section-center-left-pingbuller-title {
+    color: #454545;
+    font-size: 30px;
+    font-family: "LeagueGothic";
+    color: rgb(69, 69, 69);
+    text-transform: uppercase;
+    line-height: 0.8;
+    text-align: left;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
+}
+
+.section-center-left-pingbuller-title>span {
+    color: #edbfff;
+}
+
+.section-center-left-pingbuller-text {
+    width: 100%;
+    height: 290px;
+    overflow: hidden;
+    margin-top: 12px;
+    font-size: 16px;
+    font-family: "OpenSans";
+    color: rgb(69, 69, 69);
+    line-height: 1.5;
+    text-align: left;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
+}
+
+.section-center-right {
+    width: 50%;
+    height: 290px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 15px;
+}
+
+.section-center-right-recent {
+    color: #454545;
+    font-size: 30px;
+    font-family: "LeagueGothic";
+    color: rgb(69, 69, 69);
+    text-transform: uppercase;
+    line-height: 0.8;
+    text-align: left;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
+}
+
+.recent {
+    width: 100%;
+    margin-top: 18px;
+    display: flex;
+}
+
+.recent-img1 {
+    width: 51px;
+    height: 51px;
+    margin-right: 15px;
+    background-image: url(../images/source_of_icons.png);
+    background-position: -216px -321px;
+}
+
+.recent-img2 {
+    width: 51px;
+    height: 51px;
+    margin-right: 15px;
+    background-image: url(../images/source_of_icons.png);
+    background-position: -145px -378px;
+}
+
+.recent-img3 {
+    width: 51px;
+    height: 51px;
+    margin-right: 15px;
+    background-image: url(../images/source_of_icons.png);
+    background-position: -74px -437px;
+}
+
+.recent-text {
+    width: 400px;
+    height: 49px;
+    overflow: hidden;
+    font-size: 16px;
+    font-family: "OpenSansExtrabold";
+    color: rgb(69, 69, 69);
+    line-height: 1.5;
+    text-align: left;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
+}
+
+.recent-text1 {
+    overflow: hidden;
+    width: 100%;
+    height: 24px;
+}
+
+.recent-text2 {
+    font-family: "OpenSansLight";
+}
+
+.recent-readmore {
+    margin-left: auto;
+    margin-right: 0;
+    padding-top: 22px;
+    text-align: right;
+}
+
+.recent-readmore>a {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "LeagueGothic";
+    color: rgb(69, 69, 69);
+    line-height: 1.333;
+    text-align: left;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
+}
+
+.reklama {
+    width: 100%;
+    height: 119px;
+    text-align: center;
+    padding-top: 123px;
+}
+
+.layer53 {
+    background-image: url("../images/Layer53.png");
+    position: absolute;
+    left: 0px;
+    top: 607px;
+    width: 100%;
+    height: 1px;
+}
+
+.layer46 {
+    background-image: url("../images/Layer46copy.png");
+    position: absolute;
+    left: 0px;
+    top: 487px;
+    width: 100%;
+    height: 1px;
+}
+
+.layer46-2 {
+    background-image: url("../images/Layer46-2.png");
+    position: absolute;
+    left: 0px;
+    top: 488px;
+    width: 100%;
+    height: 1px;
+}
+
+.section-bottom {
+    width: 100%;
+    height: 396px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    background-color: #ececec;
+}
+
+.section-bottom-content {
+    display: flex;
+    width: 100%;
+}
+
+.section-bottom-content1 {
+    width: 280px;
+    height: 100%;
+}
+
+.section-bottom-content2 {
+    margin-left: 58px;
+    width: 295px;
+    height: 100%;
+}
+
+.section-bottom-content3 {
+    margin-left: 58px;
+    width: 295px;
+    height: 100%;
+}
+
+#sec-bot-con4,
+#sec-bot-con5 {
+    display: none;
+}
+
+.section-bottom-content-title {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: "georgia-italic";
+    color: rgb(197, 197, 197);
+    font-style: italic;
+    line-height: 1.5;
+    text-align: left;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
+}
+
+.section-bottom-content-text {
+    height: 120px;
+    overflow: hidden;
+    font-size: 16px;
+    font-family: "OpenSans";
+    color: rgb(120, 120, 120);
+    line-height: 1.5;
+    text-align: left;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
+}
+
+.section-bottom-content-title2 {
+    font-size: 30px;
+    font-family: "LeagueGothic";
+    color: rgb(69, 69, 69);
+    line-height: 0.8;
+    text-align: left;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
+}
+
+.section-bottom-content-text2 {
+    height: 168px;
+    overflow: hidden;
+    margin-top: 12px;
+    font-size: 16px;
+    font-family: "OpenSans";
+    color: rgb(120, 120, 120);
+    line-height: 1.5;
+    text-align: left;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
+}
+
+.footer {
+    height: 115px;
+    background-image: url(../images/bg-footer.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.footer-content {
+    background-image: url(../images/bgLayer30.png);
+    background-repeat: no-repeat;
+    padding-top: 46px;
+    height: 16px;
+    z-index: 96;
+    display: flex;
+}
+
+.footer-ul {
+    display: block;
+    width: 560px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.footer-li {
+    display: block;
+    padding-right: 40px;
+}
+
+.footer-li>a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "LeagueGothic";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.686;
+    text-align: left;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.footer-designer {
+    width: 360px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: 0;
+    font-size: 12px;
+    font-family: "OpenSansLight";
+    color: rgb(255, 255, 255);
+    line-height: 2.81;
+    text-align: right;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+    text-decoration: underline;
+}
+
+.footer-designer2 {
+    font-family: "OpenSansExtrabold";
+}
+
+@media screen and (max-width: 976px) {
+    .container {
+        width: 728px;
+    }
+    .header {
+        height: 798px;
+    }
+    .header-menu {
+        flex-wrap: wrap;
+    }
+    .header-nav {
+        width: 100%;
+        padding-top: 25px;
+    }
+    .header-nav-ul {
+        justify-content: flex-start;
+    }
+    .header-nav-li-active {
+        margin-left: 0;
+        margin-right: 47px;
+    }
+    .header-nav-li:hover {
+        margin-left: 0;
+        margin-right: 47px;
+    }
+    .header-nav-li {
+        margin-left: 0;
+        margin-right: 47px;
+    }
+    .sliders {
+        margin-top: 50px;
+    }
+    .sliders-background {
+        margin-top: 0px;
+        top: 244px;
+    }
+    .sliders-smartphone {
+        padding-right: 20px;
+    }
+    .sliders-text {
+        width: 280px;
+    }
+    .sliders-text1 {
+        font-size: 46px;
+    }
+    .sliders-text2 {
+        font-size: 24px;
+    }
+    .sliders-text3 {
+        font-size: 16px;
+        height: 112px;
+    }
+    .navigation {
+        left: 560px;
+        top: 460px;
+    }
+    .about-company-text1 {
+        width: 180px;
+        height: 145px;
+    }
+    .wrapper-about-company {
+        padding-top: 75px;
+    }
+    .about-company-title {
+        font-size: 24px;
+        line-height: 1;
+    }
+    .section-center-left-pingbuller {
+        height: 272px;
+        background-size: 314px 290px;
+    }
+    .section-center-left-pingbuller-text {
+        height: 149px;
+    }
+    .img-checkbox {
+        left: 150px;
+    }
+    .section-center-left-pingbuller-title {
+        font-size: 24px;
+    }
+    .section-center-right {
+        padding-left: 20px;
+        padding-right: 5px;
+    }
+    .recent-text {
+        width: 268px;
+    }
+    .reklama>img {
+        width: 725px;
+    }
+    .section-bottom-content-title2 {
+        font-size: 24px;
+    }
+    #sec-bot-con1,
+    #sec-bot-con2 {
+        display: none;
+    }
+    #sec-bot-con4,
+    #sec-bot-con5 {
+        display: block;
+    }
+    #sec-bot-con3 {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 440px;
+    }
+    .header {
+        height: 548px;
+    }
+    .header-menu {
+        height: 110px;
+    }
+    .header-logo {
+        margin: 0 auto;
+    }
+    .header-nav-ul {
+        flex-direction: column;
+        width: 253px;
+        height: 45px;
+        overflow: hidden;
+        margin: 0 auto;
+        background-image: url(../images/Shape8.png);
+        /*         background-image: url(image/Layer45-480.png);*/
+        opacity: 0.902;
+    }
+    .header-nav-ul:hover {
+        height: 260px;
+    }
+    .header-nav-li-active {
+        display: block;
+        margin: 0 auto;
+        height: 43px;
+        background-image: url(../images/Layer%2014.png);
+        background-repeat: no-repeat;
+        background-size: 100% 2px;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+    .header-nav-li-active>a {
+        text-decoration: none;
+        font-size: 24px;
+        font-family: "LeagueGothic";
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        line-height: 1.75;
+        text-align: center;
+        text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+    }
+    .header-nav-li {
+        width: 243px;
+        height: 43px;
+        border-top: 1px solid #53405b;
+        border-bottom: 1px solid #3e3146;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        margin: 0 auto;
+        font-size: 24px;
+        font-family: "LeagueGothic";
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        line-height: 1.405;
+        text-align: center;
+        text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+    }
+    .header-nav-li:hover {
+        display: block;
+        margin: 0 auto;
+        height: 43px;
+        background-image: url(../images/Layer%2014.png);
+        background-repeat: no-repeat;
+        background-size: 100% 2px;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+    .header-nav-li-active:hover {
+        display: block;
+        margin: 0 auto;
+        width: 243px;
+        height: 43px;
+        text-align: center;
+        background-image: url(../images/Layer%2014.png);
+        background-repeat: no-repeat;
+        background-size: 100% 2px;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+    .header-nav-li>a {
+        text-decoration: none;
+        font-size: 24px;
+        font-family: "LeagueGothic";
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        line-height: 1.75;
+        text-align: center;
+        text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+    }
+    .sliders-background {
+        height: 248px;
+        z-index: 2;
+    }
+    .sliders-text3 {
+        display: none;
+    }
+    .sliders-text1 {
+        font-size: 36px;
+        line-height: 0.667;
+    }
+    .sliders-text2 {
+        font-size: 18px;
+    }
+    .sliders-text {
+        margin-top: 105px;
+    }
+    .sliders-smartphone>img {
+        height: 304px;
+    }
+    .sliders-smartphone {
+        margin-top: 5px;
+        margin-right: 15px;
+        z-index: 1;
+    }
+    .sliders {
+        visibility: inherit;
+        height: 360px;
+        z-index: 2;
+    }
+    .navigation {
+        left: 185px;
+        top: 270px;
+    }
+    .wrapper-about-company {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 0px;
+    }
+    .about-company-text {
+        width: 440px;
+        height: 110px;
+    }
+    .about-company-text1 {
+        width: 370px;
+        font-size: 16px;
+        line-height: 1.5;
+        height: 76px;
+    }
+    .about-company-title {
+        font-size: 24px;
+        line-height: 1;
+    }
+    .about-company {
+        height: 106px;
+        margin-top: 50px;
+    }
+    .section-top {
+        height: 600px;
+    }
+    .section-center {
+        height: 1020px;
+    }
+    .section-center-content {
+        height: 785px;
+        flex-wrap: wrap;
+    }
+    .section-center-left {
+        width: 100%;
+    }
+    .section-center-right {
+        width: 100%;
+        padding-left: 60px;
+        padding-right: 50px;
+    }
+    .reklama {
+        height: 233px;
+        padding-top: 40px;
+    }
+    .reklama>img {
+        content: url("../images/logos480.png");
+        width: 345px;
+        height: 154px;
+    }
+    .layer53 {
+        top: 1020px;
+    }
+    .layer46 {
+        top: 787px;
+    }
+    .layer46-2 {
+        top: 788px;
+    }
+    .section-center-left-pingbuller {
+        height: 272px;
+        background-size: 415px 272px;
+    }
+    .img-checkbox {
+        left: 180px;
+    }
+    .section-bottom {
+        width: 100%;
+        height: 668px;
+        padding-top: 20px;
+        padding-bottom: 80px;
+    }
+    .section-bottom-content {
+        flex-wrap: wrap;
+    }
+    .section-bottom-content3 {
+        padding-top: 60px;
+        margin-left: 0;
+        width: 100%;
+        height: 190px;
+    }
+    .section-bottom-content-text2 {
+        height: 100px;
+    }
+    .footer {
+        height: 200px;
+    }
+    .footer-content {
+        flex-wrap: wrap;
+    }
+    .footer-ul {
+        width: 440px;
+        justify-content: space-between;
+    }
+    .footer-li {
+        padding-right: 0;
+    }
+    .footer-designer {
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 280px;
+    }
+    .header {
+        height: 516px;
+    }
+    .sliders-text1 {
+        font-size: 24px;
+    }
+    .header-nav-ul {
+        background-image: none;
+    }
+    .header-nav-li {
+        border: none;
+    }
+    .header-nav-ul:hover {
+        background-image: url(../images/Shape8.png);
+        opacity: 0.902;
+    }
+    .sliders {
+        height: 335px;
+        margin-top: 0;
+    }
+    .sliders-smartphone {
+        display: none;
+    }
+    .sliders-text {
+        width: 280px;
+        margin-left: 20px;
+    }
+    .navigation {
+        left: 100px;
+        top: 230px;
+    }
+    .sliders-background {
+        background-color: transparent;
+    }
+    .header-nav-li-active {
+        line-height: 1.405;
+        text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
+    }
+    .about-company-text {
+        width: 220px;
+    }
+    .about-company-text1 {
+        width: 220px;
+    }
+    .section-center {
+        height: 1205px;
+    }
+    .section-center-left-pingbuller {
+        background-size: 257px 290px;
+    }
+    .img-checkbox {
+        left: 100px;
+    }
+    .section-center-left-pingbuller-title>span {
+        display: block;
+        margin-top: 5px;
+    }
+    .section-center-right {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .recent-text {
+        width: 218px;
+    }
+    .recent-text2 {
+        width: 218px;
+        height: 24px;
+    }
+    .reklama {
+        height: 420px;
+        padding-top: 40px;
+        background-image: url(../images/logos320.png);
+    }
+    .reklama>img {
+        display: none;
+    }
+    .section-bottom {
+        display: none;
+    }
+    .layer53 {
+        display: none;
+    }
+    .footer-menu {
+        display: none;
+    }
+}
