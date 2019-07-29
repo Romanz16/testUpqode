@@ -5,7 +5,9 @@ const autoprefixer = require('gulp-autoprefixer');
 const rename = require("gulp-rename");
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
-const image = require('gulp-image');
+// const image = require('gulp-image');
+const imagemin = require('gulp-imagemin');
+const pngquant = require('gulp-pngquant');
 const browsersync = require('browser-sync').create();
 
 const paths = {
@@ -35,6 +37,23 @@ function browserSync(done) {
         port: 3000
     });
     done();
+}
+
+function img() {
+    return gulp.src('app/images/*.jpg')
+        .pipe(imagemin({
+            interlaced: true,
+            progressive: true,
+            svgoPlugins: [{ removeViewBox: false }]
+        }))
+        .pipe(gulp.dest('build/images'));
+}
+function pngimg() {
+    return gulp.src('app/images/*.png')
+        .pipe(pngquant({
+            quality: '65-80'
+        }))
+        .pipe(gulp.dest('build/images'));
 }
 
 function browserSyncReload(done) {
@@ -67,23 +86,32 @@ function scripts() {
         .pipe(browsersync.stream())
 }
 
-function images() {
-    return gulp.src(paths.images.src)
-        .pipe(image())
-        .pipe(gulp.dest(paths.images.dest))
-        .pipe(browsersync.stream())
-}
+// function images() {
+//     return gulp.src(paths.images.src)
+//         .pipe(image())
+//         .pipe(gulp.dest(paths.images.dest))
+//         .pipe(browsersync.stream())
+// }
 
 function watch() {
     gulp.watch(paths.html.src, html);
     gulp.watch(paths.styles.src, styles);
     gulp.watch(paths.scripts.src, scripts);
-    gulp.watch(paths.images.src, images);
+    // gulp.watch(paths.images.src, images);
+    gulp.watch(paths.images.src, img);
+    gulp.watch(paths.images.src, pngimg);
     gulp.watch('app/*.html', gulp.series(browserSyncReload));
 }
 
-const build = gulp.parallel(html, styles, scripts, images);
-// const build = gulp.parallel(html, styles, scripts);
+function fonts() {
+    return gulp.src('app/fonts/**/*.ttf')
+        .pipe(gulp.dest('build/fonts/'))
+}
+
+// const build = gulp.parallel(html, styles, scripts, images);
+const build = gulp.parallel(html, styles, scripts, fonts, img, pngimg);
 gulp.task('build', build);
 
-gulp.task('default', gulp.parallel(watch, build, browserSync))
+gulp.task('default', gulp.parallel(watch, build, browserSync));
+
+
