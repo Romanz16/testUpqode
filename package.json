@@ -1,7 +1,6 @@
 {
   "name": "html-new",
   "version": "1.0.0",
-  "description": "",
   "main": "gulpfile.js",
   "dependencies": {
     "browser-sync": "^2.26.7",
@@ -23,12 +22,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Romanz16/html-new.git"
+    "url": "git+https://github.com/Romanz16/testUpqode.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Romanz16/html-new/issues"
+    "url": "https://github.com/Romanz16/testUpqode/issues"
   },
-  "homepage": "https://github.com/Romanz16/html-new#readme"
+  "homepage": "https://github.com/Romanz16/testUpqode#readme",
+  "description": ""
 }

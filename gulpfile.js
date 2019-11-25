@@ -5,7 +5,6 @@ const autoprefixer = require('gulp-autoprefixer');
 const rename = require("gulp-rename");
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
-// const image = require('gulp-image');
 const imagemin = require('gulp-imagemin');
 const pngquant = require('gulp-pngquant');
 const browsersync = require('browser-sync').create();
@@ -50,9 +49,7 @@ function img() {
 }
 function pngimg() {
     return gulp.src('app/images/*.png')
-        .pipe(pngquant({
-            quality: '65-80'
-        }))
+        // .pipe(pngquant())
         .pipe(gulp.dest('build/images'));
 }
 
@@ -86,18 +83,11 @@ function scripts() {
         .pipe(browsersync.stream())
 }
 
-// function images() {
-//     return gulp.src(paths.images.src)
-//         .pipe(image())
-//         .pipe(gulp.dest(paths.images.dest))
-//         .pipe(browsersync.stream())
-// }
 
 function watch() {
     gulp.watch(paths.html.src, html);
     gulp.watch(paths.styles.src, styles);
     gulp.watch(paths.scripts.src, scripts);
-    // gulp.watch(paths.images.src, images);
     gulp.watch(paths.images.src, img);
     gulp.watch(paths.images.src, pngimg);
     gulp.watch('app/*.html', gulp.series(browserSyncReload));
@@ -108,7 +98,6 @@ function fonts() {
         .pipe(gulp.dest('build/fonts/'))
 }
 
-// const build = gulp.parallel(html, styles, scripts, images);
 const build = gulp.parallel(html, styles, scripts, fonts, img, pngimg);
 gulp.task('build', build);
 
