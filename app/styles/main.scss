@@ -34,7 +34,7 @@ body {
     display: flex;
     justify-content: space-between;
 
-    font-family: Poppins;
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: bold;
     color: #FFFFFF;
@@ -71,7 +71,7 @@ body {
 }
 
 .header-nav-li>a {
-    font-family: Poppins;
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -84,30 +84,29 @@ body {
 .header-nav-li>a:hover {
     border: none;
     border-bottom: 1px solid white;
+    cursor: pointer;
 }
 
 .active>a {
     text-decoration: none;
     border: none;
     border-bottom: 1px solid white;
-   
 }
 
 .slider {
     height: 100vh;
-    background-color: aquamarine;
-
+    // background-color: aquamarine;
 }
 
 .leftArrow {
     position: absolute;
-    top: 45%;
+    top: 47%;
     left: 3%;
 }
 
 .rightArrow {
     position: absolute;
-    top: 45%;
+    top: 47%;
     right: 3%;
 }
 
