@@ -13,7 +13,7 @@ body {
 
 .header {
     width: 100%;
-    height: 100%;
+    height: 65px;
     position: fixed;
     top: 0;
     left: 0;
@@ -93,7 +93,7 @@ body {
     border-bottom: 1px solid white;
 }
 
-.slider {
+.homeslider {
     height: 100vh;
     // background-color: aquamarine;
 }
@@ -111,6 +111,71 @@ body {
 }
 
 // #player {}
+
+.radio{
+    height: 20px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top:90%;
+    // left: 320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.slider{
+    margin: 8px;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background-color: white;
+}
+.slider-active{
+    margin: 5px;
+    height: 19px;
+    width: 19px;
+    border: 1px solid #00A031;
+    padding: 3px;
+    background: #00A031 content-box;
+}
+
+// #play{
+//     position: absolute;
+//     padding: 10px;
+//     width: 34px;
+//     height: 37px;
+//     top: 450px;
+//     left:10px;
+//     border-radius: 3px;
+//     background-image: url(image/play2.png);
+//     background-size: 60px 60px;
+//     background-position: 62px 50px;
+// }
+// #pause{
+//     position: absolute;
+//     padding: 10px;
+//     width: 34px;
+//     height: 37px;
+//     top: 450px;
+//     left:10px;
+//     display: none;
+//     border-radius: 3px;
+//     background-image: url(image/play2.png);
+//     background-size: 68px 60px;
+//     background-position: 35px 50px;
+// }
+.preview{
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    border: 1px solid black;
+    display: none;
+    top: 420px;
+    border: 2px solid white;
+    border-radius: 4px;
+}
+
+
 
 
 .section-services{
