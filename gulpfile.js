@@ -6,7 +6,7 @@ const rename = require("gulp-rename");
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin');
-const pngquant = require('gulp-pngquant');
+// const pngquant = require('gulp-pngquant');
 const browsersync = require('browser-sync').create();
 
 const paths = {
@@ -78,7 +78,7 @@ function styles() {
 function scripts() {
     return gulp.src(paths.scripts.src)
         .pipe(concat('main.min.js'))
-        .pipe(uglify())
+        // .pipe(uglify())
         .pipe(gulp.dest(paths.scripts.dest))
         .pipe(browsersync.stream())
 }
